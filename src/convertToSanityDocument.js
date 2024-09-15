@@ -9,7 +9,10 @@ function convertToSanityDocument({data = {}, contents}) {
     _createdAt: format(new Date(date)),
     publishedAt: format(new Date(date)),
     title,
-    body: portableText
+    description,
+    heroImage,
+    heroAlt,
+    link   
   }
   return doc
 }
